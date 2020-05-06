@@ -36,6 +36,8 @@ namespace Labs_Shops
             }
 
             app.UseRouting();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();

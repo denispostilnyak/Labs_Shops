@@ -1,0 +1,67 @@
+﻿.btn1 {
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align:auto;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    border: 2px solid #F64C2B;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+}
+
+    .btn1:active {
+        top: .1em;
+        left: .1em;
+        box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+    }
+.btn2 {
+    font-weight: 700;
+    display: inline-block;
+    color: white;
+    height: 2.2em;
+    line-height: 0.4em;
+    vertical-align: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+}
+
+    .btn2:hover {
+        background: rgb(53, 167, 110);
+    }
+
+    .btn2:active {
+        background: rgb(33,147,90);
+        box-shadow: 0 3px rgb(33,147,90) inset;
+    }
+.btn3 {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+}
+
+    .btn3:hover {
+        background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+    }
+
+    .btn3:active {
+        background: linear-gradient(#f59500, #f5ae00) #f59500;
+    }

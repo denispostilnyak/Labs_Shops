@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Informatics-2020-Lab2 Shop</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body style="background:url(./styles/avat.jpg)">
+    <article>
+        <div class="page" style="border-color:cadetblue">
+            <h1 class="animated flipInX" style="color:blue; text-align:center">Informatics-2020-Lab2 Shop</h1>
+            <h3 class="animated rotateInDownLeft" style="text-align:center">Add Category</h3>
+            <form action="javascript:void(0);" method="POST" onsubmit="addCategory()" style="text-align:center">
+                <input type="text" id="add-name" placeholder="New Category">
+                <input class="btn3" type="submit" value="Add">
+            </form>
+
+            <div id="editCategory">
+                <h3 style="text-align:center">Edit</h3>
+                <form style="text-align:center" action="javascript:void(0);" onsubmit="updateCategory()">
+                    <input type="hidden" id="edit-id">
+                    <input placeholder="Please write new value" type="text" id="edit-name">
+                    <input class="btn2" type="submit" value="Save">
+                    <input class="btn1" type="reset" value="Reset">
+                </form>
+            </div>
+
+            <p id="counter"></p>
+            <div align="center" class="animated rotateIn">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                    </tr>
+                        <tbody style="background-color:cadetblue; text-align:center" id="categories"></tbody>
+                </table>
+            </div>
+          
+            <script src="js/lab2.js" asp-append-version="true"></script>
+            <script type="text/javascript">
+                getCategories();
+            </script>
+        </div>
+    </article>
+</body>
+</html>

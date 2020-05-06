@@ -29,7 +29,7 @@ namespace Labs_Shops.Controllers
             _context.Categories.Add(Product);
             _context.SaveChanges();
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public ActionResult DeleteCategories(int? id) {
             Category cat = _context.Categories.Where(c => c.Id == id).FirstOrDefault();
             if (cat != null)  {
@@ -42,9 +42,10 @@ namespace Labs_Shops.Controllers
            
         }
         [HttpPut]
-        public ActionResult ChangeCategory(int? id, [FromBody]Category cat) {
+        public ActionResult ChangeCategory([FromBody]Category cat) {
+            int id=cat.Id;
             var check = _context.Categories.Any(c => c.Id == id);
-            if (check) {
+           if (check) {
                 Category categoryBefore = _context.Categories.Where(c => c.Id == id).FirstOrDefault();
                 if (cat.Name!=null) {
                     categoryBefore.Name = cat.Name;
