@@ -13,6 +13,9 @@ namespace Labs_Shops.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase {
         private readonly Labs2_Context _context;
+        public CategoriesController() {
+
+        }
         public CategoriesController(Labs2_Context context) {
             _context = context;
         }
